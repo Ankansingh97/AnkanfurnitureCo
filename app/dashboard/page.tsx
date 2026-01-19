@@ -109,7 +109,7 @@ export default function DashboardPage() {
           <div className="rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 p-6">
             <div className="text-white/60 text-sm mb-1">Total Revenue</div>
             <div className="text-3xl font-bold">
-              ${stats.totalRevenue.toLocaleString()}
+              ₹{stats.totalRevenue.toLocaleString()}
             </div>
           </div>
           <div className="rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 p-6">
@@ -162,7 +162,7 @@ export default function DashboardPage() {
                   <div>
                     <div className="font-medium">New order received</div>
                     <div className="text-sm text-white/60">
-                      Order #ORD-003 - $2,499
+                      Order #ORD-003 - ₹20,499
                     </div>
                   </div>
                   <div className="text-sm text-white/60">2 hours ago</div>
@@ -246,7 +246,7 @@ export default function DashboardPage() {
                           {order.date}
                         </td>
                         <td className="py-3 px-4 text-right font-medium">
-                          ${order.amount.toLocaleString()}
+                          ₹{order.amount.toLocaleString()}
                         </td>
                       </tr>
                     ))}
